@@ -1,0 +1,38 @@
+.homeContainer {
+  height: 100vh;
+  width: 100vw;
+}
+.navbarHome {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10vw;
+  padding: 5px 120px;
+  margin: 0px 5vw;
+  border: 1px solid white;
+  border-radius: 15px;
+  font-weight: 600;
+  position: fixed;
+  top: 5px;
+  z-index: 1;
+}
+.bookIcon {
+  font-size: 30px;
+}
+.titleSection {
+  display: flex;
+  flex-direction: row;
+  gap: 1vw;
+  position: relative;
+  top: 15vh;
+  align-items: center;
+  justify-content: center;
+}
+.titleSectionLeft {
+  width: 60vw;
+}
+.profilePic {
+  width: 25vw;
+  border-radius: 100%;
+}
