@@ -1,0 +1,37 @@
+.contactLayout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2vw;
+}
+.contactImage {
+  height: 50vh;
+  margin-right: 10vw;
+}
+.contactForm {
+  border: 2px solid white;
+  padding: 40px;
+  width: 42vw;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.contactForm label {
+  font-size: 24px;
+  font-weight: 600;
+}
+.contactForm input {
+  font-size: 22px;
+  border: 2px solid grey;
+  margin: 5px;
+  color: white;
+  background-color: black;
+  border-radius: 5px;
+}
+.contactForm textarea {
+  font-size: 22px;
+  border: 2px solid gray;
+  margin: 7px;
+  color: white;
+  margin-top: 20px;
+  background-color: black;
+}
