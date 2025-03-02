@@ -16,6 +16,7 @@
   position: fixed;
   top: 5px;
   z-index: 1;
+  background-color: rgba(0,0,0,0.9);
 }
 .bookIcon {
   font-size: 30px;
@@ -26,13 +27,40 @@
   gap: 1vw;
   position: relative;
   top: 15vh;
+  margin-bottom: 15vh;
   align-items: center;
   justify-content: center;
 }
 .titleSectionLeft {
   width: 60vw;
 }
+.titleSectionLeft h1 {
+  font-size: 44px;
+  font-weight: 900;
+}
+.titleSectionLeft h3 {
+    font-size: 28px;
+    font-weight: 600;
+  }
+  .titleSectionLeft p {
+    font-size: 20px;
+  }
 .profilePic {
-  width: 25vw;
+  height: 50vh;
   border-radius: 100%;
+}
+.headSectionButtons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5vw;
+    margin: 50px 20px;
+}
+.headSectionButtons button{
+    font-size: 24px;
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 30px;
+    background-color: black;
+    color: white;
 }

@@ -1,0 +1,23 @@
+.collegesDisplay{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.collegeDetails{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15vw;
+    border: 2px solid white;
+    border-radius: 10px;
+    margin: 15px 100px;
+}
+.studyDetails{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5vw;
+}
+.collegeImages{
+    height: 100px;
+}
