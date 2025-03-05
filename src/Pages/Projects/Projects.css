@@ -1,0 +1,12 @@
+.projectsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2vw;
+  margin: 5px;
+}
+.projectsDisplaying {
+  width: 27vw;
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 5px;
+}

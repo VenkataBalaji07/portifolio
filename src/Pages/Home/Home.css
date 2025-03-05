@@ -16,7 +16,7 @@
   position: fixed;
   top: 5px;
   z-index: 1;
-  background-color: rgba(0,0,0,0.9);
+  background-color: rgba(0, 0, 0, 0.9);
 }
 .bookIcon {
   font-size: 30px;
@@ -39,28 +39,29 @@
   font-weight: 900;
 }
 .titleSectionLeft h3 {
-    font-size: 28px;
-    font-weight: 600;
-  }
-  .titleSectionLeft p {
-    font-size: 20px;
-  }
+  font-size: 28px;
+  font-weight: 600;
+}
+.titleSectionLeft p {
+  font-size: 20px;
+}
 .profilePic {
   height: 50vh;
   border-radius: 100%;
 }
-.headSectionButtons{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 5vw;
-    margin: 50px 20px;
+.headSectionButtons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5vw;
+  margin: 50px 20px;
 }
-.headSectionButtons button{
-    font-size: 24px;
-    padding: 10px 20px;
-    border: 2px solid white;
-    border-radius: 30px;
-    background-color: black;
-    color: white;
+.headSectionButtons button {
+  font-size: 24px;
+  padding: 10px 20px;
+  border: 2px solid white;
+  border-radius: 30px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
 }

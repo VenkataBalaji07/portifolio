@@ -15,23 +15,37 @@
   border-radius: 5px;
   margin-bottom: 20px;
 }
+.contactForm form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+.formElements{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
 .contactForm label {
   font-size: 24px;
   font-weight: 600;
 }
 .contactForm input {
-  font-size: 22px;
+  font-size: 18px;
   border: 2px solid grey;
   margin: 5px;
+  padding: 5px;
   color: white;
   background-color: black;
   border-radius: 5px;
 }
 .contactForm textarea {
-  font-size: 22px;
+  font-size: 18px;
   border: 2px solid gray;
   margin: 7px;
   color: white;
+  padding: 5px;
   margin-top: 20px;
   background-color: black;
 }
