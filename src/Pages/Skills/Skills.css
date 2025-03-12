@@ -1,0 +1,33 @@
+.skills-block {
+  width: 100vw;
+  height: 100vh;
+  margin-bottom: 10vh;
+}
+.skills-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 5vw;
+  align-items: center;
+  margin-left: 5vw;
+  justify-content: center;
+}
+.skill-img-container {
+  width: 100px;
+  height: 100px;
+}
+.skill-img-container:hover .skill-img-container:focus {
+  box-shadow: 0px 0px 15px white;
+}
+.skill-img {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+  object-fit: cover;
+}
+.skill-title {
+  font-size: 22px;
+  text-align: center;
+  font-weight: 600;
+  font-family: cursive;
+}

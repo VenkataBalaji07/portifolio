@@ -6,6 +6,7 @@ import baluPic from "../../assets/balu-photo.jpg";
 import { IoBookSharp } from "react-icons/io5";
 import "./Home.css";
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import Skills from "../Skills/Skills";
 
 const Home = () => {
   return (
@@ -69,6 +70,7 @@ const Home = () => {
           <button>Resume</button>
         </a>
       </div>
+      <Skills/>
       <Education />
       <Projects />
       <Contact />
