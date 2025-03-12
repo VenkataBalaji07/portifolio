@@ -7,6 +7,7 @@ import { IoBookSharp } from "react-icons/io5";
 import "./Home.css";
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 import Skills from "../Skills/Skills";
+import TwinklingStars from "../../Components/TwinklingStars";
 
 const Home = () => {
   return (
@@ -69,6 +70,9 @@ const Home = () => {
         >
           <button>Resume</button>
         </a>
+      </div>
+      <div className="stars-background">
+      <TwinklingStars/>
       </div>
       <Skills/>
       <Education />
