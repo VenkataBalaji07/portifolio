@@ -71,3 +71,88 @@
   left: 0px;
   z-index: -1;
 }
+
+@media (max-width: 1024px) {
+  .navbarHome {
+    gap: 8vw;
+  }
+  .titleSection {
+    top: 10vh;
+  }
+  .titleSectionLeft {
+    width: 70vw;
+  }
+  .titleSectionLeft h1 {
+    font-size: 42px;
+    font-weight: 900;
+  }
+  .titleSectionLeft h3 {
+    font-size: 26px;
+    font-weight: 500;
+  }
+  .titleSectionLeft p {
+    font-size: 19px;
+  }
+  .profilePic {
+    height: 30vh;
+    border-radius: 50%;
+  }
+  .headSectionButtons {
+    gap: 6vw;
+    margin: 50px 20px;
+  }
+  .headSectionButtons button {
+    font-size: 22px;
+  }
+}
+@media (max-width: 768px) {
+  .navbarHome {
+    gap: 8vw;
+    padding: 3px 50px;
+    margin: 0px 0vw;
+    border: 1px solid white;
+    border-radius: 15px;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  .bookIcon {
+    font-size: 28px;
+  }
+  .titleSection {
+    flex-direction: column-reverse;
+    gap: 1vh;
+    position: relative;
+    top: 13vh;
+    margin-bottom: 15vh;
+  }
+  .titleSectionLeft {
+    width: 99vw;
+  }
+  .titleSectionLeft h1 {
+    font-size: 36px;
+    font-weight: 900;
+  }
+  .titleSectionLeft h3 {
+    font-size: 24px;
+    font-weight: 500;
+  }
+  .titleSectionLeft p {
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .profilePic {
+    height: 30vh;
+    border-radius: 100%;
+  }
+  .headSectionButtons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+    margin: 50px 20px;
+  }
+  .headSectionButtons button {
+    font-size: 20px;
+  }
+}

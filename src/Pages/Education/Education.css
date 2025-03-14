@@ -21,3 +21,31 @@
 .collegeImages{
     height: 100px;
 }
+@media (max-width:1024px) {
+    .collegeDetails{
+        margin: 15px 60px;
+    }
+    .collegeImages{
+        height: 90px;
+    }
+}
+@media (max-width:768px) {
+
+    .collegeDetails{
+        padding: 1vw;
+        display: flex;
+        gap: 5vw;
+        border: 1px solid white;
+        border-radius: 7px;
+        margin: 15px 15px;
+    }
+    .studyDetails{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5vw;
+    }
+    .collegeImages{
+        height: 60px;
+    }
+}
