@@ -12,6 +12,7 @@ import spacy from "../../assets/spacy.png";
 import tensorflow from "../../assets/tensorflow.jpeg";
 import React, { useState } from "react";
 import "./Skills.css";
+import { motion } from "motion/react";
 
 const Skills = () => {
   const [displaySkill, setDisplaySkill] = useState("");
@@ -24,7 +25,8 @@ const Skills = () => {
         </center>
       </div>
       <div className="skills-container">
-        <div
+        <motion.div
+        whileHover={{scale:1.05}}
           className={
             displaySkill === "python"
               ? "skill-img-container"
@@ -44,29 +46,9 @@ const Skills = () => {
           ) : (
             <></>
           )}
-        </div>
-        <div
-          className={
-            displaySkill === "numpy"
-              ? "skill-img-container"
-              : "skill-img-container"
-          }
-        >
-          <img
-            src={numpy}
-            alt="numpy"
-            title="Numpy"
-            onMouseEnter={() => setDisplaySkill("numpy")}
-            onMouseLeave={() => setDisplaySkill("")}
-            className="skill-img"
-          />
-          {displaySkill === "numpy" ? (
-            <p className="skill-title">Numpy</p>
-          ) : (
-            <></>
-          )}
-        </div>
-        <div
+        </motion.div>
+        <motion.div
+        whileHover={{scale:1.05}}
           className={
             displaySkill === "pandas"
               ? "skill-img-container"
@@ -86,8 +68,31 @@ const Skills = () => {
           ) : (
             <></>
           )}
-        </div>
-        <div
+        </motion.div>
+        <motion.div
+        whileHover={{scale:1.05}}
+          className={
+            displaySkill === "numpy"
+              ? "skill-img-container"
+              : "skill-img-container"
+          }
+        >
+          <img
+            src={numpy}
+            alt="numpy"
+            title="Numpy"
+            onMouseEnter={() => setDisplaySkill("numpy")}
+            onMouseLeave={() => setDisplaySkill("")}
+            className="skill-img"
+          />
+          {displaySkill === "numpy" ? (
+            <p className="skill-title">Numpy</p>
+          ) : (
+            <></>
+          )}
+        </motion.div>
+        <motion.div
+        whileHover={{scale:1.05}}
           className={
             displaySkill === "matplot"
               ? "skill-img-container"
@@ -107,8 +112,9 @@ const Skills = () => {
           ) : (
             <></>
           )}
-        </div>
-        <div
+        </motion.div>
+        <motion.div
+        whileHover={{scale:1.05}}
           className={
             displaySkill === "scikit"
               ? "skill-img-container"
@@ -128,8 +134,9 @@ const Skills = () => {
           ) : (
             <></>
           )}
-        </div>
-        <div
+        </motion.div>
+        <motion.div
+        whileHover={{scale:1.05}}
           className={
             displaySkill === "tensorflow"
               ? "skill-img-container"
@@ -145,12 +152,13 @@ const Skills = () => {
             className="skill-img"
           />
           {displaySkill === "tensorflow" ? (
-            <p className="skill-title">Tensor Flow</p>
+            <p className="skill-title">TensorFlow</p>
           ) : (
             <></>
           )}
-        </div>
-        <div
+        </motion.div>
+        <motion.div
+        whileHover={{scale:1.05}}
           className={
             displaySkill === "keras"
               ? "skill-img-container"
@@ -170,8 +178,9 @@ const Skills = () => {
           ) : (
             <></>
           )}
-        </div>
-        <div
+        </motion.div>
+        <motion.div
+        whileHover={{scale:1.05}}
           className={
             displaySkill === "spacy"
               ? "skill-img-container"
@@ -191,71 +200,9 @@ const Skills = () => {
           ) : (
             <></>
           )}
-        </div>
-        <div
-          className={
-            displaySkill === "genai"
-              ? "skill-img-container"
-              : "skill-img-container"
-          }
-        >
-          <img
-            src={genai}
-            alt="genai"
-            title="Gen AI"
-            onMouseEnter={() => setDisplaySkill("genai")}
-            onMouseLeave={() => setDisplaySkill("")}
-            className="skill-img"
-          />
-          {displaySkill === "genai" ? (
-            <p className="skill-title">Generative AI</p>
-          ) : (
-            <></>
-          )}
-        </div>
-        <div
-          className={
-            displaySkill === "deeplearning"
-              ? "skill-img-container"
-              : "skill-img-container"
-          }
-        >
-          <img
-            src={deeplearning}
-            alt="deeplearning"
-            title="Deep Learning"
-            onMouseEnter={() => setDisplaySkill("deeplearning")}
-            onMouseLeave={() => setDisplaySkill("")}
-            className="skill-img"
-          />
-          {displaySkill === "deeplearning" ? (
-            <p className="skill-title">Deep Learning</p>
-          ) : (
-            <></>
-          )}
-        </div>
-        <div
-          className={
-            displaySkill === "ml"
-              ? "skill-img-container"
-              : "skill-img-container"
-          }
-        >
-          <img
-            src={ml}
-            alt="ml"
-            title="Machine Learning"
-            onMouseEnter={() => setDisplaySkill("ml")}
-            onMouseLeave={() => setDisplaySkill("")}
-            className="skill-img"
-          />
-          {displaySkill === "ml" ? (
-            <p className="skill-title">Machine Learning</p>
-          ) : (
-            <></>
-          )}
-        </div>
-        <div
+        </motion.div>
+        <motion.div
+        whileHover={{scale:1.05}}
           className={
             displaySkill === "ai"
               ? "skill-img-container"
@@ -275,7 +222,74 @@ const Skills = () => {
           ) : (
             <></>
           )}
-        </div>
+        </motion.div>
+
+        <motion.div
+        whileHover={{scale:1.05}}
+          className={
+            displaySkill === "ml"
+              ? "skill-img-container"
+              : "skill-img-container"
+          }
+        >
+          <img
+            src={ml}
+            alt="ml"
+            title="Machine Learning"
+            onMouseEnter={() => setDisplaySkill("ml")}
+            onMouseLeave={() => setDisplaySkill("")}
+            className="skill-img"
+          />
+          {displaySkill === "ml" ? (
+            <p className="skill-title">Machine Learning</p>
+          ) : (
+            <></>
+          )}
+        </motion.div>
+        <motion.div
+        whileHover={{scale:1.05}}
+          className={
+            displaySkill === "deeplearning"
+              ? "skill-img-container"
+              : "skill-img-container"
+          }
+        >
+          <img
+            src={deeplearning}
+            alt="deeplearning"
+            title="Deep Learning"
+            onMouseEnter={() => setDisplaySkill("deeplearning")}
+            onMouseLeave={() => setDisplaySkill("")}
+            className="skill-img"
+          />
+          {displaySkill === "deeplearning" ? (
+            <p className="skill-title">Deep Learning</p>
+          ) : (
+            <></>
+          )}
+        </motion.div>
+        <motion.div
+        whileHover={{scale:1.05}}
+          className={
+            displaySkill === "genai"
+              ? "skill-img-container"
+              : "skill-img-container"
+          }
+        >
+          <img
+            src={genai}
+            alt="genai"
+            title="Gen AI"
+            onMouseEnter={() => setDisplaySkill("genai")}
+            onMouseLeave={() => setDisplaySkill("")}
+            className="skill-img"
+          />
+          {displaySkill === "genai" ? (
+            <p className="skill-title">Generative AI</p>
+          ) : (
+            <></>
+          )}
+        </motion.div>
       </div>
     </div>
   );

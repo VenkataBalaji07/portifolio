@@ -7,6 +7,7 @@ import { IoBookSharp } from "react-icons/io5";
 import "./Home.css";
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 import Skills from "../Skills/Skills";
+import { motion } from "motion/react";
 import TwinklingStars from "../../Components/TwinklingStars";
 
 const Home = () => {
@@ -21,8 +22,20 @@ const Home = () => {
       </div>
       <div className="titleSection">
         <div className="titleSectionLeft">
-          <h1>Venkata Balaji Boppudi</h1>
-          <h3>Software Developer | Problem Solver | Tech Enthusiast</h3>
+          <motion.h1
+            initial={{ opacity: 0, y: -50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ ease: "anticipate", duration: 1.2 }}
+          >
+            Venkata Balaji Boppudi
+          </motion.h1>
+          <motion.h3
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1 }}
+          >
+            Software Developer | Problem Solver | Tech Enthusiast
+          </motion.h3>
           <p>
             Passionate about building scalable and efficient software solutions
             that enhance user experiences. I thrive on solving complex problems
@@ -32,11 +45,22 @@ const Home = () => {
           </p>
         </div>
         <div>
-          <img src={baluPic} alt="Balu" className="profilePic" />
+          <motion.img
+            initial={{ scale: 0 }}
+            whileInView={{ scale: 1 }}
+            transition={{ duration: 1.5 }}
+            src={baluPic}
+            alt="Balu"
+            className="profilePic"
+          />
         </div>
       </div>
       <div className="headSectionButtons">
-        <button>
+        <motion.button
+          initial={{ x: -150, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.8, ease: "easeInOut" }}
+        >
           <a
             href="https://github.com/VenkataBalaji07"
             target="_blank"
@@ -44,8 +68,12 @@ const Home = () => {
           >
             <FaGithub />
           </a>
-        </button>
-        <button>
+        </motion.button>
+        <motion.button
+          initial={{ x: -100, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.7, ease: "easeInOut" }}
+        >
           <a
             href="https://www.linkedin.com/in/venkata-balaji-boppudi-632b5b248"
             target="_blank"
@@ -53,8 +81,12 @@ const Home = () => {
           >
             <FaLinkedin />
           </a>
-        </button>
-        <button>
+        </motion.button>
+        <motion.button
+          initial={{ x: 150, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.8, ease: "easeInOut" }}
+        >
           <a
             href="https://x.com/Balaji4207?t=NGov0PEfCcGWFL_1G1WlEg&s=09"
             target="_blank"
@@ -62,19 +94,25 @@ const Home = () => {
           >
             <FaTwitter />
           </a>
-        </button>
+        </motion.button>
         <a
           href="https://drive.google.com/file/d/1MZJtYqPF-bA2YvT2RTpC93y83AIGNSCS/view?usp=drivesdk"
           target="_blank"
           style={{ color: "white" }}
         >
-          <button>Resume</button>
+          <motion.button
+            initial={{ x: 200, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.8, ease: "easeInOut" }}
+          >
+            Resume
+          </motion.button>
         </a>
       </div>
       <div className="stars-background">
-      <TwinklingStars/>
+        <TwinklingStars />
       </div>
-      <Skills/>
+      <Skills />
       <Education />
       <Projects />
       <Contact />
