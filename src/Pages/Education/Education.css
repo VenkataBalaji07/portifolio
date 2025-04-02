@@ -19,7 +19,10 @@
     gap: 5vw;
 }
 .collegeImages{
-    height: 100px;
+    height: 40px;
+    width: 40px;
+    margin-top: 10px;
+    margin-right: 10px;
 }
 @media (max-width:1024px) {
     .collegeDetails{

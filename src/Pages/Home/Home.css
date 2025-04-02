@@ -7,19 +7,21 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 10vw;
+  gap: 4vw;
   padding: 5px 120px;
   margin: 0px 5vw;
-  border: 1px solid white;
+  /*border: 1px solid white;*/
   border-radius: 15px;
-  font-weight: 600;
-  position: fixed;
+  font-weight: 400;
+  font-size: 16px;
+  /*position: fixed;*/
   top: 5px;
   z-index: 1;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 .bookIcon {
   font-size: 30px;
+  padding-right: 33vw;
 }
 .titleSection {
   display: flex;
@@ -37,13 +39,24 @@
 .titleSectionLeft h1 {
   font-size: 44px;
   font-weight: 900;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .titleSectionLeft h3 {
   font-size: 28px;
   font-weight: 600;
+  color: aliceblue;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.name1{
+  background: linear-gradient(150deg, orange 5%, #71f625 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .titleSectionLeft p {
-  font-size: 20px;
+  font-size: 19px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .profilePic {
   height: 50vh;
@@ -57,13 +70,46 @@
   margin: 50px 20px;
 }
 .headSectionButtons button {
-  font-size: 24px;
+  font-size: 28px;
   padding: 10px 20px;
-  border: 2px solid white;
+  /*border: 2px solid white;*/
   border-radius: 30px;
   background-color: black;
   color: white;
   cursor: pointer;
+}
+.github-button{
+  color: white;
+}
+.github-button:hover{
+  color: black;
+  background-color: white;
+  font-size: 32px;
+}
+.gmail-button{
+  color: white;
+}
+.gmail-button:hover{
+  color: red;
+  font-size: 32px;
+}
+.linkedin-button{
+  color: white;
+}
+.linkedin-button:hover{
+  color: darkblue;
+  background-color: white;
+  font-size: 32px;
+}
+.twitter-button{
+  color: white;
+}
+.twitter-button:hover{
+  color: skyblue;
+  font-size: 32px;
+}
+.download-cv{
+  font-size: 20px;
 }
 .stars-background {
   position: fixed;
