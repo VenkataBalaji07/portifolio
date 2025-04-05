@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Education from "../Education/Education";
 import Projects from "../Projects/Projects";
 import Contact from "../Contact/Contact";
@@ -11,12 +11,18 @@ import { motion } from "motion/react";
 import TwinklingStars from "../../Components/TwinklingStars";
 import { SiGmail } from "react-icons/si";
 import AnchorLink from "react-anchor-link-smooth-scroll";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { ImCross } from "react-icons/im";
 
 const Home = () => {
+const [navbarOpen, setNavbarOpen] = useState(false)
+
   return (
     <div className="homeContainer" id="homecomponent">
-      <div className="navbarHome">
+      <div className={navbarOpen?"hamburgerclose":"hamburgeropen"} onClick={()=>setNavbarOpen(!navbarOpen)} ><GiHamburgerMenu/></div>
+      <div className={navbarOpen?"navbarHome":"navbarhome2"}>
         <IoBookSharp className="bookIcon" />
+        <ImCross className="crossnav" onClick={()=>setNavbarOpen(!navbarOpen)} />
         <p className="navelement">
           <AnchorLink
             href="#homecomponent"
@@ -88,7 +94,7 @@ const Home = () => {
       </div>
       <div className="headSectionButtons">
         <motion.button
-          initial={{ x: -100, opacity: 0 }}
+          initial={{ x: -10, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.8, ease: "easeInOut" }}
           title="GitHub"

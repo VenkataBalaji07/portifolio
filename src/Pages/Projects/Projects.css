@@ -10,3 +10,12 @@
   border-radius: 5px;
   padding: 5px;
 }
+
+@media (max-width:768px) {
+  .projectsGrid{
+    grid-template-columns: 1fr 1fr;
+  }
+  .projectsDisplaying{
+    width: 40vw;
+  }
+}

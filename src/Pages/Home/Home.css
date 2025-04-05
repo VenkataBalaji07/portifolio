@@ -19,12 +19,38 @@
   z-index: 1;
   background-color: rgba(0, 0, 0, 0.7);
 }
-.navelement{
+.navbarhome2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 4vw;
+  padding: 5px 120px;
+  margin: 0px 5vw;
+  /*border: 1px solid white;*/
+  border-radius: 15px;
+  font-weight: 400;
+  font-size: 16px;
+  /*position: fixed;*/
+  top: 5px;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.hamburgeropen {
+  display: none;
+}
+.hamburgerclose {
+  display: none;
+}
+.crossnav {
+  display: none;
+}
+.navelement {
   text-decoration: none;
   color: aliceblue;
   transition: 1s;
 }
-.navelement:hover{
+.navelement:hover {
   text-decoration: underline;
   transform: scale(1.1);
 }
@@ -48,7 +74,8 @@
 .titleSectionLeft h1 {
   font-size: 44px;
   font-weight: 900;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 .titleSectionLeft h3 {
   font-size: 28px;
@@ -57,7 +84,7 @@
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }
-.name1{
+.name1 {
   background: linear-gradient(150deg, orange 5%, #71f625 100%);
   background-clip: text;
   -webkit-background-clip: text;
@@ -87,37 +114,37 @@
   color: white;
   cursor: pointer;
 }
-.github-button{
+.github-button {
   color: white;
 }
-.github-button:hover{
+.github-button:hover {
   color: black;
   background-color: white;
   font-size: 32px;
 }
-.gmail-button{
+.gmail-button {
   color: white;
 }
-.gmail-button:hover{
+.gmail-button:hover {
   color: red;
   font-size: 32px;
 }
-.linkedin-button{
+.linkedin-button {
   color: white;
 }
-.linkedin-button:hover{
+.linkedin-button:hover {
   color: darkblue;
   background-color: white;
   font-size: 32px;
 }
-.twitter-button{
+.twitter-button {
   color: white;
 }
-.twitter-button:hover{
+.twitter-button:hover {
   color: skyblue;
   font-size: 32px;
 }
-.download-cv{
+.download-cv {
   font-size: 20px;
 }
 .stars-background {
@@ -163,17 +190,58 @@
 @media (max-width: 768px) {
   .navbarHome {
     flex-direction: column;
-    gap: 8vw;
-    padding: 3px 50px;
+    gap: 2vh;
+    padding: 0px;
+    position: fixed;
+    top: 2vh;
+    left: 10px;
+    width: 40vw;
     margin: 0px 0vw;
     border: 1px solid white;
     border-radius: 15px;
     font-size: 16px;
     font-weight: 500;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  .navbarhome2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4vh;
+    padding: 0px;
+    margin: 0px 0vw;
+    border: 1px solid white;
+    border-radius: 15px;
+    font-weight: 500;
+    font-size: 16px;
+    position: fixed;
+    width: 40vw;
+    top: 15px;
+    left: -310px;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  .hamburgeropen {
+    display: inline;
+    position: fixed;
+    top: 5vh;
+    left: 5vw;
+    font-size: 24px;
+    z-index: 1;
+  }
+  .hamburgerclose {
+    display: none;
+  }
+  .crossnav {
+    display: inline;
+    position: absolute;
+    top: 10px;
+    right: 10px;
   }
   .bookIcon {
-    font-size: 28px;
+    display: none;
+    /*font-size: 28px;*/
   }
   .titleSection {
     flex-direction: column-reverse;
@@ -205,10 +273,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 2vw;
+    gap: 1vw;
     margin: 50px 20px;
   }
+  .download-cv {
+    font-size: 12px;
+  }
   .headSectionButtons button {
-    font-size: 20px;
+    font-size: 12px;
   }
 }

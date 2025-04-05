@@ -33,8 +33,8 @@ const Education = () => {
           </div>
         </motion.div>
         <motion.div
-          initial={{ x: 150, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 1 }}
+          initial={{ z: -150, opacity: 0 }}
+          whileInView={{ z: 0, opacity: 1 }}
           transition={{ duration: 1 }}
           className="collegeDetails"
         >
