@@ -12,9 +12,9 @@ const TwinklingStars = () => {
     const stars = Array.from({ length: 200 }).map(() => ({
       x: Math.random() * canvas.width,
       y: Math.random() * canvas.height,
-      radius: Math.random() * 1.2,
+      radius: Math.random() * 1.5,
       opacity: Math.random(),
-      speed: Math.random() * 0.02 + 0.01,
+      speed: Math.random() * 0.06 + 0.01,
     }));
 
     const animate = () => {

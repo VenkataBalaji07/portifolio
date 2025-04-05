@@ -10,16 +10,45 @@ import Skills from "../Skills/Skills";
 import { motion } from "motion/react";
 import TwinklingStars from "../../Components/TwinklingStars";
 import { SiGmail } from "react-icons/si";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 const Home = () => {
   return (
-    <div className="homeContainer">
+    <div className="homeContainer" id="homecomponent">
       <div className="navbarHome">
         <IoBookSharp className="bookIcon" />
-        <p>Home</p>
-        <p>Education</p>
-        <p>Projects</p>
-        <p>Contact Me</p>
+        <p className="navelement">
+          <AnchorLink
+            href="#homecomponent"
+            style={{ textDecoration: "none", color: "white" }}
+          >
+            Home
+          </AnchorLink>
+        </p>
+        <p className="navelement">
+          <AnchorLink
+            href="#educationcomponent"
+            style={{ textDecoration: "none", color: "white" }}
+          >
+            Education
+          </AnchorLink>
+        </p>
+        <p className="navelement">
+          <AnchorLink
+            href="#projectscomponent"
+            style={{ textDecoration: "none", color: "white" }}
+          >
+            Projects
+          </AnchorLink>
+        </p>
+        <p className="navelement">
+          <AnchorLink
+            href="#contactcomponent"
+            style={{ textDecoration: "none", color: "white" }}
+          >
+            Contact Me
+          </AnchorLink>
+        </p>
       </div>
       <div className="titleSection">
         <div className="titleSectionLeft">
@@ -69,8 +98,8 @@ const Home = () => {
             target="_blank"
             style={{ color: "white" }}
           >
-            <span className="github-button" >
-            <FaGithub />
+            <span className="github-button">
+              <FaGithub />
             </span>
           </a>
         </motion.button>
@@ -85,8 +114,8 @@ const Home = () => {
             target="_blank"
             style={{ color: "white" }}
           >
-            <span className="gmail-button" >
-            <SiGmail/>
+            <span className="gmail-button">
+              <SiGmail />
             </span>
           </a>
         </motion.button>
@@ -101,8 +130,8 @@ const Home = () => {
             target="_blank"
             style={{ color: "white" }}
           >
-            <span className="linkedin-button" >
-            <FaLinkedin />
+            <span className="linkedin-button">
+              <FaLinkedin />
             </span>
           </a>
         </motion.button>
@@ -117,7 +146,9 @@ const Home = () => {
             target="_blank"
             style={{ color: "white" }}
           >
-            <span className="twitter-button"><FaTwitter /></span>
+            <span className="twitter-button">
+              <FaTwitter />
+            </span>
           </a>
         </motion.button>
         <a

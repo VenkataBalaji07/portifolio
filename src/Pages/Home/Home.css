@@ -19,6 +19,15 @@
   z-index: 1;
   background-color: rgba(0, 0, 0, 0.7);
 }
+.navelement{
+  text-decoration: none;
+  color: aliceblue;
+  transition: 1s;
+}
+.navelement:hover{
+  text-decoration: underline;
+  transform: scale(1.1);
+}
 .bookIcon {
   font-size: 30px;
   padding-right: 33vw;
@@ -153,6 +162,7 @@
 }
 @media (max-width: 768px) {
   .navbarHome {
+    flex-direction: column;
     gap: 8vw;
     padding: 3px 50px;
     margin: 0px 0vw;

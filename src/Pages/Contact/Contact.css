@@ -2,11 +2,22 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 2vw;
+  gap: 4vw;
 }
 .contactImage {
   height: 50vh;
   margin-right: 10vw;
+}
+.contactForm1 {
+  border: 2px solid white;
+  padding: 40px;
+  width: 25vw;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5vh;
+  font-size: 28px;
 }
 .contactForm {
   border: 2px solid white;
@@ -28,6 +39,8 @@
   gap: 20px;
 }
 .contactForm label {
+  width:150px;
+  text-align: right;
   font-size: 24px;
   font-weight: 600;
 }
@@ -48,6 +61,15 @@
   padding: 5px;
   margin-top: 20px;
   background-color: black;
+}
+.formButtons{
+  display: flex;
+  gap: 5vw;
+}
+.formButtons input:hover{
+  scale: 1.05;
+  background-color: aliceblue;
+  color: black;
 }
 @media (max-width:1024px) {
   .contactImage {

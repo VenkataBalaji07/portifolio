@@ -7,7 +7,7 @@ import { motion } from "motion/react";
 
 const Education = () => {
   return (
-    <div>
+    <div id="educationcomponent">
       <center>
         <h1>Education Details</h1>
       </center>
